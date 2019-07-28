@@ -1,7 +1,7 @@
 Package: tabulog
 Type: Package
 Title: Parsing Semi-Structured Log Files into Tabular Format
-Version: 0.1.0
+Version: 0.1.1
 Author: Austin Nar
 Maintainer: Austin Nar <austin.nar@gmail.com>
 Description: Convert semi-structured log files (such as apache access.log files)
