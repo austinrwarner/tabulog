@@ -115,9 +115,9 @@
 #'                 match names of classes in template string, or a similarly
 #'                 named list of regex strings for coercing into parsers
 #'
-#'  \code{formatters} should be a named list of fuctions, where names
+#'  \code{formatters} should be a named list of functions, where names
 #'                 match names of classes in template string, for properly
-#'                 formatting fileds once they have been captured
+#'                 formatting fields once they have been captured
 #'
 #' @param template Template string
 #' @param text Character vector; each element a log record

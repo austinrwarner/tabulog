@@ -9,7 +9,7 @@
 #' Default parser classes
 #'
 #' List or parser classes provided 'out-of-the-box'. These can be used without
-#' further definition in any templates, or can be overriden.
+#' further definition in any templates, or can be overridden.
 #'
 #' Parser classes are provided for the following
 #' \itemize{

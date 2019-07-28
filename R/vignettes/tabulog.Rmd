@@ -16,7 +16,7 @@ library(tabulog)
 
 ## Introduction to Tabulog
 
-Tabulog is a felixible, powerful framework for parsing log files, specifically
+Tabulog is a flexible, powerful framework for parsing log files, specifically
 designed for web logs (such as the access.log files created by Apache), with the
 final output being in a tabular format.
 
@@ -85,7 +85,7 @@ parser('[0-9]+', f = as.integer, name = 'int') # Name is optional
 Tabulog as a framework is designed to be language-agnostic, so the ideas of
 templates and parser classes here will be portable to any other versions
 of the package made for other languages. Formatters, however, are language
-specific and must be implemeted in the language being used. 
+specific and must be implemented in the language being used. 
 
 
 ## An Example in R
@@ -104,7 +104,7 @@ template <- '{{ ip ip_address }} - - [{{ date date_time }}] "{{ url URL }}"'
 ```
 
 We then need to define our classes. `ip` and `url` are builtins with the package,
-but dates come in a variety of formats so we must explicitly define our's here.
+but dates come in a variety of formats so we must explicitly define ours here.
 Note you can see all builtins using `default_classes()`
 
 ```{r date_class}
@@ -164,7 +164,7 @@ parse_logs_file(log_file, template_file, formatters)
 ## Notes
 
 ### Escape characters
-The only characters that neet to be escaped in templates are curly braces 
-(even single ones). Usually a backslash sould be sufficient `'\{'`, but the 
+The only characters that need to be escaped in templates are curly braces 
+(even single ones). Usually a backslash should be sufficient `'\{'`, but the 
 html-style escapes `'&#123;'` and `'&#125;'` are also included as valid syntax
 for any edge cases that may arise.
