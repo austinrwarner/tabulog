@@ -27,6 +27,7 @@
 #' @examples
 #' default_classes()
 #'
+#' @importFrom yaml yaml.load_file
 #' @export
 default_classes <- function(file=system.file('config/parser_classes.yml', package = 'tabulog'),
                             formatters = .default_formatters()){

@@ -12,6 +12,8 @@ vignette: >
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tabulog)
+library(readr)
+library(lubridate)
 ```
 
 ## Introduction to Tabulog
@@ -90,10 +92,10 @@ specific and must be implemented in the language being used.
 
 ## An Example in R
 
-Let's again say you have the example logs in the file `access.log`.
+Let's again say you have the example logs in the file `accesslog.txt`.
 
 ```{r show_logs, comment=''}
-log_file <- 'access.log'
+log_file <- 'accesslog.txt'
 cat(readr::read_file(log_file))
 ```
 

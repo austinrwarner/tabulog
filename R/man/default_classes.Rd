@@ -15,7 +15,7 @@ parsers. Default formatters are provided for default parser classes}
 }
 \description{
 List or parser classes provided 'out-of-the-box'. These can be used without
-further definition in any templates, or can be overriden.
+further definition in any templates, or can be overridden.
 }
 \details{
 Parser classes are provided for the following

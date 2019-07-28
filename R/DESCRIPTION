@@ -4,12 +4,12 @@ Title: Parsing Semi-Structured Log Files into Tabular Format
 Version: 0.1.1
 Author: Austin Nar
 Maintainer: Austin Nar <austin.nar@gmail.com>
-Description: Convert semi-structured log files (such as apache access.log files)
-    into a tabular format (data.frame) using a standard templating system.
+Description: Convert semi-structured log files (such as Apache access.log files)
+    into a tabular format (data.frame) using a standard template system.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: yaml
-Suggests: lubridate, knitr
+Imports: yaml
+Suggests: lubridate, knitr, readr
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1

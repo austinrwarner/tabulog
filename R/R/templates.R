@@ -207,6 +207,7 @@ parse_logs <- function(text, template, classes = list(), ...){
 }
 
 #' @rdname parse_logs
+#' @importFrom yaml yaml.load_file
 #' @export
 parse_logs_file <- function(text_file, config_file, formatters = list(), ...){
   # Simply a wrapper for parse_logs. Read in the text from the connection
