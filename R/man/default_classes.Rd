@@ -13,6 +13,12 @@ default_classes(file = system.file("config/parser_classes.yml", package =
 \item{formatters}{Named list of formatter functions to be associated with
 parsers. Default formatters are provided for default parser classes}
 }
+\value{
+A named list of the default parser classes provided "out of the box". Users
+        should not need to use this in their code, and is mostly used for use in 
+        other internal functions. It is only visible to users so they can call
+        it and see what classes are available by default.
+}
 \description{
 List or parser classes provided 'out-of-the-box'. These can be used without
 further definition in any templates, or can be overridden.

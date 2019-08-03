@@ -14,6 +14,10 @@ formatter(x) <- value
 
 \item{value}{formatter function to be set}
 }
+\value{
+The formatter attribute (should be a function) for the passed object 
+        (usually a \code{parser} object)
+}
 \description{
 Get or set the formatter for a parser
 }

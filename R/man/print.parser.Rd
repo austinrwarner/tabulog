@@ -11,6 +11,9 @@
 
 \item{...}{Other arguments; ignored}
 }
+\value{
+\code{x}, invisibly
+}
 \description{
 Print a \code{parser} object. Underlying method uses \code{cat}.
 }

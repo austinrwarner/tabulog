@@ -14,6 +14,10 @@ name(x) <- value
 
 \item{value}{Name to be set}
 }
+\value{
+The name attribute (should be a character) for the passed object 
+        (usually a \code{parser} object)
+}
 \description{
 Get or set the name for a parser
 }

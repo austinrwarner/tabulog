@@ -17,3 +17,6 @@ None (new package)
 ## Fixes from previous rejected submissions
 * Fixed title case in DESCRIPTION file
 * Added protocol 'http://' to web link in vignette tabulog.Rmd
+* Added 'Value' sections to documentation
+* Modified the NOT RUN sections of examples that write to disk by using tempfile()
+    - These examples are now run

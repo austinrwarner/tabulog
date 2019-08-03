@@ -25,6 +25,11 @@ template string}
 
 \item{formatters}{Named list of formatter functions for use of formatting \code{classes}}
 }
+\value{
+A data.frame with each field identified in the template string as a column.
+        For each record in the passed text, the fields were extracted and formatted
+        using the parser objects in \code{default_classes()} and \code{classes}.
+}
 \description{
 Parse a log file with a provided template and a set of classes
 }
@@ -53,7 +58,6 @@ Parse a log file with a provided template and a set of classes
                 formatting fields once they have been captured
 }
 \examples{
-\dontrun{
 # Template string with two fields
 template <- '{{ip ipAddress}} - [{{date accessDate}}] {{int status }}'
 
@@ -75,10 +79,13 @@ date_parser <- parser(
 # Parse the logs from raw data
 parse_logs(logs, template, list(date=date_parser))
 
-# Write the logs to file and parse
-writeLines(logs, 'test.log')
-yaml::write_yaml(list(template=template, classes=list(date=date_parser)), 'template.yml')
-parse_logs_file('test.log', 'template.yml', myFormatters)
-}
+# Write the logs and to file and parse
+logfile <- tempfile()
+templatefile <- tempfile()
+writeLines(logs, logfile)
+yaml::write_yaml(list(template=template, classes=list(date=date_parser)), templatefile)
+parse_logs_file(logfile, templatefile, myFormatters)
+file.remove(logfile)
+file.remove(templatefile)
 
 }
