@@ -53,7 +53,6 @@ Parse a log file with a provided template and a set of classes
                 formatting fields once they have been captured
 }
 \examples{
-\dontrun{
 # Template string with two fields
 template <- '{{ip ipAddress}} - [{{date accessDate}}] {{int status }}'
 
@@ -76,9 +75,10 @@ date_parser <- parser(
 parse_logs(logs, template, list(date=date_parser))
 
 # Write the logs to file and parse
-writeLines(logs, 'test.log')
-yaml::write_yaml(list(template=template, classes=list(date=date_parser)), 'template.yml')
-parse_logs_file('test.log', 'template.yml', myFormatters)
-}
+logfile <- tempfile()
+templatefile <- tempfile()
+writeLines(logs, logfile)
+yaml::write_yaml(list(template=template, classes=list(date=date_parser)), templatefile)
+parse_logs_file(logfile, templatefile, myFormatters)
 
 }

@@ -17,7 +17,10 @@
 #' @param f A function to format the captured output, or a named list of such
 #'   functions if \code{x} is a list
 #' @param name An optional name for the parser
-#'
+#' 
+#' @return \code{parser} and its S3 methods coerce \coode{x} to a \code{parser} object,
+#'         returning said parser object. \code{is.parser} returns TRUE or FALSE
+#' 
 #' @examples
 #' # Captures integers
 #' parser('[0-9]+')
@@ -106,6 +109,8 @@ format.parser <- function(x, ...){
 #'
 #' @param x parser to be printed
 #' @param ... Other arguments; ignored
+#' 
+#' @return \code{x}, invisibly
 #'
 #' @examples
 #' # No name, default formatter
@@ -138,6 +143,9 @@ print.parser <- function(x, ...){
 #'
 #' # Custom formatter
 #' formatter(p)
+#' 
+#' @return The formatter attribute (should be a function) for the passed object 
+#'         (usually a \code{parser} object)
 #'
 #' @export
 formatter <- function(x){
@@ -169,6 +177,9 @@ formatter <- function(x){
 #'
 #' @param x parser
 #' @param value Name to be set
+#' 
+#' @return The name attribute (should be a character) for the passed object 
+#'         (usually a \code{parser} object)
 #'
 #' @examples
 #' p <- parser('[0-9]+]')
