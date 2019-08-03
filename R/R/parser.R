@@ -18,7 +18,7 @@
 #'   functions if \code{x} is a list
 #' @param name An optional name for the parser
 #' 
-#' @return \code{parser} and its S3 methods coerce \coode{x} to a \code{parser} object,
+#' @return \code{parser} and its S3 methods coerce \code{x} to a \code{parser} object,
 #'         returning said parser object. \code{is.parser} returns TRUE or FALSE
 #' 
 #' @examples
