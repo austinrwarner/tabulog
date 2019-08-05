@@ -20,3 +20,4 @@ None (new package)
 * Added 'Value' sections to documentation
 * Modified the NOT RUN sections of examples that write to disk by using tempfile()
     - These examples are now run
+* Added single quotes to 'Apache' in DESCRIPTION file
