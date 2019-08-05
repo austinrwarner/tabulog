@@ -1,0 +1,10 @@
+README.md
+setup.py
+tabulog/__init__.py
+tabulog/defaults.py
+tabulog/parser.py
+tabulog/templates.py
+tabulog.egg-info/PKG-INFO
+tabulog.egg-info/SOURCES.txt
+tabulog.egg-info/dependency_links.txt
+tabulog.egg-info/top_level.txt
