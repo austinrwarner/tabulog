@@ -12,4 +12,6 @@ setup(name='tabulog',
       author='Austin Nar',
       author_email='austin.nar@gmail.com',
       license='MIT',
-      packages=['tabulog'])
+      packages=['tabulog'],
+      install_requires=['PyYAML', 'pandas']
+      )

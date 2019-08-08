@@ -7,4 +7,5 @@ tabulog/templates.py
 tabulog.egg-info/PKG-INFO
 tabulog.egg-info/SOURCES.txt
 tabulog.egg-info/dependency_links.txt
+tabulog.egg-info/requires.txt
 tabulog.egg-info/top_level.txt
