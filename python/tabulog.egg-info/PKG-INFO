@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tabulog
+Version: 0.1.1
+Summary: Parsing Semi-Structured Log Files into Tabular Format
+Home-page: http://github.com/austinnar/tabulog
+Author: Austin Nar
+Author-email: austin.nar@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
