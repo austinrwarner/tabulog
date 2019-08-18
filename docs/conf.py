@@ -2,7 +2,7 @@
 #
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Path setup --------------------------------------------------------------
 
@@ -30,7 +30,8 @@ release = '0.1.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -1,10 +1,10 @@
 .. tabulog documentation master file, created by
-   sphinx-quickstart on Tue Aug  6 00:31:50 2019.
+   sphinx-quickstart on Sun Aug 18 15:58:39 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-tabulog: Parsing Semi-Structured Log Files into Tabular Format
-==============================================================
+Welcome to tabulog's documentation!
+===================================
 
 .. toctree::
    :maxdepth: 2
@@ -16,4 +16,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
+* :ref:`modindex`
 * :ref:`search`
