@@ -3,18 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to tabulog's documentation!
-===================================
+tabulog: Parsing Semi-Structured Log Files into Tabular Format
+==============================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+.. automodule:: tabulog
+   :members: Template, Parser, default_classes
 
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
