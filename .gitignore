@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+*.Rproj
+python/venvs
+__pycache__
+*..Rcheck
