@@ -12,7 +12,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../python/tabulog'))
+sys.path.insert(0, os.path.abspath('../python'))
+
+autodoc_mock_imports = ['tabulog']
 
 
 # -- Project information -----------------------------------------------------
