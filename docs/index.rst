@@ -1,20 +1,20 @@
-.. tabulog documentation master file, created by
-   sphinx-quickstart on Sun Aug 18 15:58:39 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+#####################
+tabulog Documentation
+#####################
 
-Welcome to tabulog's documentation!
-===================================
+**tabulog** is standard template syntax for converting semi-structured log files (such as 'Apache' 
+access.log files) into a tabular format, as well as a set of libraries (namely in R and Python) that 
+implement the specification. **tabulog** is designed so that the template can be saved as a 
+human-readable YAML file and ported from one language to another.
+
+********
+Contents
+********
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+  :maxdepth: 2
+  :titlesonly:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+  Introduction <intro>
+  Python Package <python/index>
+  R Package <R/index>
