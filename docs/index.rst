@@ -10,8 +10,6 @@ tabulog: Parsing Semi-Structured Log Files into Tabular Format
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: tabulog
-   :members: Template, Parser, default_classes
 
 
 Indices and tables
