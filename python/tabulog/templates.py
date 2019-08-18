@@ -1,5 +1,6 @@
 import yaml, re, os
 from pandas import DataFrame as DF
+from collections import defaultdict
 
 from .defaults import default_classes
 from .parser import Parser, _identity as identity
@@ -7,9 +8,32 @@ from .parser import Parser, _identity as identity
 
 
 class Template:
+  """This is the core processor of logs. A Template object stores all the necessary
+  information about the tabulog template string and the parser classes used within
+  that template.
   
-  def __init__(self, template_string=None, file=None, classes=[]):
+  Templates can be created either by passing the tabulog template string and parser
+  classes directly, or by storing the template string and class definitions in a 
+  single yaml file.
+  
+  Attributes:
+    - template (str): tabulog template string
+    - classes (dict): :class:Parser objects to be used with the fields in the template
+  """
+  def __init__(self, template_string=None, file=None, classes=[], formatters={}):
+    """Template constructor
     
+    Args:
+      - tempalte_string (str): The tabulog template string
+      - file (str): Name of a YAML file containing the tabulog string and class definitions
+      - classes (list): List of Parser objects to be used with template. Ignored if 
+        using a template file.
+      - formatters (dict): Dictionary of formatter functions to associate with the classes
+        defined in *file*. Ignored if using a template_string.
+        
+    
+    
+    """
     self.classes = default_classes()
     
     if template_string:
@@ -34,8 +58,15 @@ class Template:
         classes = conf['classes']
       except KeyError:
         pass
+      
+      formatter_dict = defaultdict(lambda: identity)
+      for k in formatters.keys():
+        formatter_dict[k] = formatters[k]
         
-      classes = [Parser(pattern, name=name) for (name, pattern) in classes.items()]
+      classes = [
+                  Parser(pattern, formatter=formatter_dict[name], name=name) 
+                  for (name, pattern) in classes.items()
+                ]
       
       self.template = conf['template']
       self.__init__(conf['template'], classes = classes)
@@ -49,6 +80,16 @@ class Template:
   
     
   def tabulate(self, text):
+    """
+    Tabulate a list of strings (representing lines in a log file) into a Pandas DataFrame.
+    
+    Args:
+      - text(list): List of strings to be tabulated.
+      
+    >>> t.tabulate('https://www.example.com/ - 200')
+                            url  status
+    0  https://www.example.com/     200
+    """
     
     def extract(text, parser):
       if type(text) != str:
