@@ -6,3 +6,4 @@
 python/venvs
 __pycache__
 *..Rcheck
+docs/_*
