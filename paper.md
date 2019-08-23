@@ -7,6 +7,10 @@ tags:
 authors:
   - name: Austin Nar
     orcid: 0000-0002-5319-9805
+    affiliation: 1
+affiliations:
+  - name: Department of Statistics, Student, Rochester Institute of Technology
+    index: 1
 date: 18 August 2019
 bibliography: paper.bib
 ---
