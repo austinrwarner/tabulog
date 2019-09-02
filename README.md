@@ -12,7 +12,7 @@ Parsing logs with Tabulog requires two things: a template, and a list of
 
 ### Tabulog Templates
 
-Inspired by Python's [Jinja2 templates](https://jinja.pocoo.org/), Tabulog templates
+Inspired by Python's [Jinja2 templates](http://jinja.pocoo.org/), Tabulog templates
 use a human-readable format mixing literal text with code. Code is being used
 extremely loosely here, as you will see that the 'code' in our templates
 is not actually R code. 
