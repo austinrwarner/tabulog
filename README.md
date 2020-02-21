@@ -87,13 +87,13 @@ install.packages('tabulog')
 
 Examples are provided for each language
 
-[An Example in R](./R/README.md)
+[An Example in R](https://tabulog.readthedocs.io/en/latest/python/example.html)
 
-[An Example in Python](./python/README.md)
+[An Example in Python](https://tabulog.readthedocs.io/en/latest/R/example.html)
 
 ## Contributing Guidelines
 
-Contributing guidelines can be found in [CONTRIBUTING.md](CONTRIBUTING.md)
+Contributing guidelines can be found in [CONTRIBUTING.md](https://github.com/AustinNar/tabulog/blob/master/CONTRIBUTING.md)
 
 ## Notes
 
