@@ -68,6 +68,32 @@ Tabulog as a framework is designed to be language-agnostic, so the ideas of
 templates and parser classes here will be portable between languages. Formatters, 
 however, are languagespecific and must be implemented in the language being used. 
 
+## Installation Instructions
+
+You can install tabulog from PyPI or CRAN as follows
+
+### Python
+
+```bash
+pip install tabulog
+```
+
+### R
+```R
+install.packages('tabulog')
+```
+
+## Examples
+
+Examples are provided for each language
+
+[An Example in R](./R/README.md)
+
+[An Example in Python](./python/README.md)
+
+## Contributing Guidelines
+
+Contributing guidelines can be found in [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Notes
 
